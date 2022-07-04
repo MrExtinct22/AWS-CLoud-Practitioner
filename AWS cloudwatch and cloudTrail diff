@@ -1,0 +1,33 @@
+CloudTrail vs CloudWatch
+● CloudWatch i s a monitoring service for AWS resources and applications. CloudTrail i s a web service
+that records API activity i n your AWS account. They are both useful monitoring tools i n AWS.
+
+● By default, CloudWatch offers free basic monitoring for your resources, such as EC2 i nstances, EBS
+volumes, and RDS DB i nstances. CloudTrail i s also enabled by default when you create your AWS
+account.
+
+● With CloudWatch, you can collect and track metrics, collect and monitor l og files, and set alarms.
+CloudTrail, on the other hand, l ogs i nformation on who made a request, the services used, the actions
+performed, parameters for the actions, and the response elements returned by the AWS service.
+CloudTrail Logs are then stored i n an S3 bucket or a CloudWatch Logs log group that you specify.
+
+● You can enable detailed monitoring from your AWS resources to send metric data to CloudWatch more
+frequently, with an additional cost.
+
+● CloudTrail delivers one free copy of management event logs for each AWS region. Management events
+include management operations performed on resources i n your AWS account, such as when a user
+logs i n to your account. Logging data events are charged. Data events i nclude resource operations
+performed on or within the resource i tself, such as S3 object-level API activity or Lambda function
+execution activity.
+
+● CloudTrail helps you ensure compliance and regulatory standards.
+
+● CloudWatch Logs reports on application l ogs, while CloudTrail Logs provide you specific i nformation on
+what occurred i n your AWS account.
+
+● CloudWatch Events i s a near real time stream of system events describing changes to your AWS
+resources. CloudTrail focuses more on AWS API calls made in your AWS account.
+
+● Typically, CloudTrail delivers an event within 15 minutes of the API call. CloudWatch delivers metric
+data i n 5 minutes periods for basic monitoring and 1 minute periods for detailed monitoring. The
+CloudWatch Logs Agent will send l og data every five seconds by default.
